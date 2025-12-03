@@ -18,7 +18,8 @@ I used a YOLOv5 small network because I did not have access to a GPU for trainin
 I trained the network to recognise 5 commands to control the robot: forward, backward, left, right and stop. The signs for these commands were taken from sign language where: "F" is forward, "B" is backward, "L" is left, "R" is right and "S" is stop.
 <add photos for commands>
 
-The data used initially consisted of about 80 images for each command and 10 background images using a 0.6/0.2/0.2 train/val/test split. This resulted in a model that was very capable of detecting all commands except for left, it would confuse left for right very often. So I added 60 images for left and 40 more for right, and trained a new network from scratch. So the total data amounts are: train: 316, val: 102 and test: 98
+The data used initially consisted of about 80 images for each command and 10 background images using a 0.6/0.2/0.2 train/val/test split. This resulted in a model that was very capable of detecting all commands except for left, it would confuse left for right very often. So I added 60 images for left and 40 more for right, and trained a new network from scratch. So the total data amounts are: train: 316, val: 102 and test: 98. 
+All data was labeled using makesense.ai.
 
 I trained the network for 30 epochs.
 
