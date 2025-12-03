@@ -34,12 +34,12 @@ The confusion matrix for the test split can be seen in the image. The background
 To run the detector for only recognising the hand gestures run: "mainText.py" This will open a window with live webcam footage, that will draw bounding boxes around the hand gestures.
 This network was trained on only my hands so it might not work for other hands.
 A video of recognising:
-<add video>
+[<add video>](https://youtu.be/gft5G8m9LoI)
 
 
 To run the code for controlling the robot, you first got to upload the StandardFirmata code onto the Arduino. Leave the Arduino connected to the computer. Then run the command: "mainArd.py" This will open a window with live webcam footage that can recognise hand gestures and will send the corresponding commands to the Arduino which will make the robot move in the right direction.
 A video of controlling the robot:
-<add video>
+[<add video>](https://youtu.be/GoWCpjxdV6w)
 
 
 
