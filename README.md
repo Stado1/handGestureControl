@@ -16,6 +16,7 @@ Here is a layout of the cables of the robot.
 ## The YOLOv5 network
 I used a YOLOv5 small network because I did not have access to a GPU for training. The small network had a nice weigh off for performance vs training time. 
 I trained the network to recognise 5 commands to control the robot: forward, backward, left, right and stop. The signs for these commands were taken from sign language where: "F" is forward, "B" is backward, "L" is left, "R" is right and "S" is stop.
+
 <img src="handB.png" alt="Logo" width="200"> <img src="handF.png" alt="Logo" width="200"> <img src="handL.png" alt="Logo" width="200"> <img src="handR.png" alt="Logo" width="200"> <img src="handS.png" alt="Logo" width="200">
 
 The data used initially consisted of about 80 images for each command and 10 background images using a 0.6/0.2/0.2 train/val/test split. This resulted in a model that was very capable of detecting all commands except for left, it would confuse left for right very often. So I added 60 images for left and 40 more for right, and trained a new network from scratch. So the total data amounts are: train: 316, val: 102 and test: 98. 
@@ -24,6 +25,7 @@ All data was labeled using makesense.ai.
 I trained the network for 30 epochs.
 
 The confusion matrix for the test split can be seen in the image. The background images were every time falsely predicted as forward, I don't know why but there were only a couple of background images in the test set so it can be ignored. The other predictions look very good.
+
 <img src="confusion_matrix_final.png" alt="Logo" width="400">
 
 
