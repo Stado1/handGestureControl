@@ -1,13 +1,15 @@
 # handGestureControl
 The goal of this project is to train a YOLOv5 network to recognise hand gestures via the webcam which will be used to steer a 4 wheeled robot.
-<img src="robot.jpeg" alt="Logo" width="200">
+
+<img src="robot.jpeg" alt="Logo" width="500">
 
 ## The robot.
 The robot is a robot with 4 wheels and 4 motors, that are controlled by an Arduino Uno. The robot will drive using skid steering.
 Because I had no access to a wireless module, the Arduino will be controlled with a cable that is directly connected to my computer. 
 Here is a layout of the cables of the robot. 
-![Logo](robotTopView.jpeg)
-![Logo](ArduinoPinLayout.png)
+
+<img src="robotTopView.jpeg" alt="Logo" width="500">
+<img src="ArduinoPinLayout.png" alt="Logo" width="500">
 
 
 
